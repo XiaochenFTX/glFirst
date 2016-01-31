@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5605162C1C5E0D18007A5B80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5605162B1C5E0D18007A5B80 /* AppDelegate.m */; };
+		5605162F1C5E0D18007A5B80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5605162E1C5E0D18007A5B80 /* main.m */; };
+		560516321C5E0D18007A5B80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560516311C5E0D18007A5B80 /* ViewController.m */; };
+		560516341C5E0D18007A5B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 560516331C5E0D18007A5B80 /* Assets.xcassets */; };
+		560516371C5E0D18007A5B80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560516351C5E0D18007A5B80 /* Main.storyboard */; };
+		560516411C5E268E007A5B80 /* MyGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 560516401C5E268E007A5B80 /* MyGLView.m */; };
+		560516441C5E34D0007A5B80 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 560516421C5E34D0007A5B80 /* Shader.fsh */; };
+		560516451C5E34D0007A5B80 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 560516431C5E34D0007A5B80 /* Shader.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		560516271C5E0D18007A5B80 /* glFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5605162A1C5E0D18007A5B80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5605162B1C5E0D18007A5B80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5605162E1C5E0D18007A5B80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		560516301C5E0D18007A5B80 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		560516311C5E0D18007A5B80 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		560516331C5E0D18007A5B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		560516361C5E0D18007A5B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		560516381C5E0D18007A5B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5605163F1C5E268E007A5B80 /* MyGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGLView.h; sourceTree = "<group>"; };
+		560516401C5E268E007A5B80 /* MyGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGLView.m; sourceTree = "<group>"; };
+		560516421C5E34D0007A5B80 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		560516431C5E34D0007A5B80 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		560516241C5E0D18007A5B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5605161E1C5E0D18007A5B80 = {
+			isa = PBXGroup;
+			children = (
+				560516291C5E0D18007A5B80 /* glFirst */,
+				560516281C5E0D18007A5B80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		560516281C5E0D18007A5B80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				560516271C5E0D18007A5B80 /* glFirst.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		560516291C5E0D18007A5B80 /* glFirst */ = {
+			isa = PBXGroup;
+			children = (
+				560516421C5E34D0007A5B80 /* Shader.fsh */,
+				560516431C5E34D0007A5B80 /* Shader.vsh */,
+				5605162A1C5E0D18007A5B80 /* AppDelegate.h */,
+				5605162B1C5E0D18007A5B80 /* AppDelegate.m */,
+				560516301C5E0D18007A5B80 /* ViewController.h */,
+				560516311C5E0D18007A5B80 /* ViewController.m */,
+				560516331C5E0D18007A5B80 /* Assets.xcassets */,
+				560516351C5E0D18007A5B80 /* Main.storyboard */,
+				560516381C5E0D18007A5B80 /* Info.plist */,
+				5605162D1C5E0D18007A5B80 /* Supporting Files */,
+				5605163F1C5E268E007A5B80 /* MyGLView.h */,
+				560516401C5E268E007A5B80 /* MyGLView.m */,
+			);
+			path = glFirst;
+			sourceTree = "<group>";
+		};
+		5605162D1C5E0D18007A5B80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5605162E1C5E0D18007A5B80 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		560516261C5E0D18007A5B80 /* glFirst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5605163B1C5E0D18007A5B80 /* Build configuration list for PBXNativeTarget "glFirst" */;
+			buildPhases = (
+				560516231C5E0D18007A5B80 /* Sources */,
+				560516241C5E0D18007A5B80 /* Frameworks */,
+				560516251C5E0D18007A5B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glFirst;
+			productName = glFirst;
+			productReference = 560516271C5E0D18007A5B80 /* glFirst.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5605161F1C5E0D18007A5B80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ftxtool;
+				TargetAttributes = {
+					560516261C5E0D18007A5B80 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 560516221C5E0D18007A5B80 /* Build configuration list for PBXProject "glFirst" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5605161E1C5E0D18007A5B80;
+			productRefGroup = 560516281C5E0D18007A5B80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				560516261C5E0D18007A5B80 /* glFirst */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		560516251C5E0D18007A5B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560516451C5E34D0007A5B80 /* Shader.vsh in Resources */,
+				560516441C5E34D0007A5B80 /* Shader.fsh in Resources */,
+				560516341C5E0D18007A5B80 /* Assets.xcassets in Resources */,
+				560516371C5E0D18007A5B80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		560516231C5E0D18007A5B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560516321C5E0D18007A5B80 /* ViewController.m in Sources */,
+				560516411C5E268E007A5B80 /* MyGLView.m in Sources */,
+				5605162F1C5E0D18007A5B80 /* main.m in Sources */,
+				5605162C1C5E0D18007A5B80 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		560516351C5E0D18007A5B80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				560516361C5E0D18007A5B80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		560516391C5E0D18007A5B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5605163A1C5E0D18007A5B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5605163C1C5E0D18007A5B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glFirst/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ftxtool.glFirst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5605163D1C5E0D18007A5B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = glFirst/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ftxtool.glFirst;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		560516221C5E0D18007A5B80 /* Build configuration list for PBXProject "glFirst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560516391C5E0D18007A5B80 /* Debug */,
+				5605163A1C5E0D18007A5B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5605163B1C5E0D18007A5B80 /* Build configuration list for PBXNativeTarget "glFirst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5605163C1C5E0D18007A5B80 /* Debug */,
+				5605163D1C5E0D18007A5B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5605161F1C5E0D18007A5B80 /* Project object */;
+}
