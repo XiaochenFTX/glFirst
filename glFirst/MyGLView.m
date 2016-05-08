@@ -174,8 +174,6 @@ GLuint program, vbo, vao;
     glUseProgram(program);
     
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
-    
-    [self setNeedsDisplay:YES];
 }
 
 //- (void)reshape
