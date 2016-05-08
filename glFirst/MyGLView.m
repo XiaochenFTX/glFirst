@@ -11,6 +11,8 @@
 #include <OpenGL/gl3.h>
 #include <OpenGL/gl3ext.h>
 
+#include <stdio.h>
+
 GLuint program, vbo, vao;
 
 @implementation MyGLView
@@ -172,7 +174,21 @@ GLuint program, vbo, vao;
     glUseProgram(program);
     
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
+    
+    [self setNeedsDisplay:YES];
 }
+
+//- (void)reshape
+//{
+//    //Get view dimensions
+//    NSRect baseRect = [self convertRectToBase:[self bounds]];
+//    int w, h;
+//    w = baseRect.size.width;
+//    h = baseRect.size.height;
+//    
+//    //Add your OpenGL resize code here
+//    glViewport(0, 0, (GLsizei)450, (GLsizei)300);
+//}
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -183,7 +199,33 @@ GLuint program, vbo, vao;
     glDrawArrays(GL_TRIANGLES, 0, 3);
     glFlush();
     
+    printf("[drawRect] x=%f,\ty=%f,\tw=%f,\th=%f\n", dirtyRect.origin.x, dirtyRect.origin.y, dirtyRect.size.width, dirtyRect.size.height);
+    
     [[self openGLContext] flushBuffer];
+}
+
+// Put our timer in -awakeFromNib, so it can start up right from the beginning
+-(void)awakeFromNib
+{
+    NSTimer* renderTimer = [NSTimer timerWithTimeInterval:0.016   //a 1ms time interval
+                                          target:self
+                                        selector:@selector(timerFired:)
+                                        userInfo:nil
+                                         repeats:YES];
+    
+    [[NSRunLoop currentRunLoop] addTimer:renderTimer
+                                 forMode:NSDefaultRunLoopMode];
+//    [[NSRunLoop currentRunLoop] addTimer:renderTimer
+//                                 forMode:NSEventTrackingRunLoopMode]; //Ensure timer fires during resize
+}
+
+// Timer callback method
+- (void)timerFired:(id)sender
+{
+    // It is good practice in a Cocoa application to allow the system to send the -drawRect:
+    // message when it needs to draw, and not to invoke it directly from the timer.
+    // All we do here is tell the display it needs a refresh
+    [self setNeedsDisplay:YES];
 }
 
 @end
